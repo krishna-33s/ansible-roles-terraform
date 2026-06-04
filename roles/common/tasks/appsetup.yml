@@ -23,7 +23,7 @@
 
 - name: download url
   ansible.builtin.get_url:
-    url: https://roboshop-artifacts.s3.amazonaws.com/{{ module }}-{{ app_version }}.zip 
+    url: https://roboshop-artifacts.s3.amazonaws.com/{{ module }}-v3.zip 
     dest: /tmp/{{ module }}.zip                
 
 - name: unarchieve
