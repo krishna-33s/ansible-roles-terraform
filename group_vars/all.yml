@@ -11,3 +11,4 @@ SHIPPING_IP: shipping-"{{ env }}".krishnadev.space
 RABBITMQ_IP: rabbitmq-"{{ env }}".krishnadev.space
 PAYMENT_IP: payment-"{{ env }}".krishnadev.space
 FRONTEND_IP: frontend-"{{ env }}".krishnadev.space
+app_version: v3
