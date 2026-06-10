@@ -1,14 +1,14 @@
 ansible_user: ec2-user 
 ansible_password: DevOps321
 
-MONGO_IP: mongodb-"{{ env }}".krishnadev.space
-CATALOGUE_IP: catalogue-"{{ env }}".krishnadev.space
-REDIS_IP: redis-"{{ env }}".krishnadev.space
-USER_IP: user-"{{ env }}".krishnadev.space
-CART_IP: cart-"{{ env }}".krishnadev.space
-MYSQL_IP: mysql-"{{ env }}".krishnadev.space
-SHIPPING_IP: shipping-"{{ env }}".krishnadev.space
-RABBITMQ_IP: rabbitmq-"{{ env }}".krishnadev.space
-PAYMENT_IP: payment-"{{ env }}".krishnadev.space
-FRONTEND_IP: frontend-"{{ env }}".krishnadev.space
+MONGO_IP: mongodb-{{ env }}.krishnadev.space
+REDIS_IP: redis-{{ env }}.krishnadev.space
+MYSQL_IP: mysql-{{ env }}.krishnadev.space
+RABBITMQ_IP: rabbitmq-{{ env }}.krishnadev.space
+CART_IP: cart.backend-alb-{{ env }}.krishnadev.space
+CATALOGUE_IP: catalogue.backend-alb-{{ env }}.krishnadev.space
+USER_IP: user.backend-alb-{{ env }}.krishnadev.space
+SHIPPING_IP: shipping.backend-alb-{{ env }}.krishnadev.space
+PAYMENT_IP: payment.backend-alb-{{ env }}.krishnadev.space
+FRONTEND_IP: frontend-{{ env }}.krishnadev.space
 app_version: v3
